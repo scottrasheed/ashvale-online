@@ -1,159 +1,300 @@
-// Ashvale Online
-// Player Movement + Collision
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    font-family: Arial, sans-serif;
+}
 
 
-const player = document.getElementById("player");
+#game {
 
-let playerX = window.innerWidth / 2;
-let playerY = window.innerHeight - 200;
+    width: 100vw;
+    height: 100vh;
 
+    background: #4c9b45;
 
-let targetX = playerX;
-let targetY = playerY;
+    position: relative;
 
-
-const speed = 3;
-
-
-
-player.style.left = playerX + "px";
-player.style.top = playerY + "px";
+    overflow: hidden;
+}
 
 
+/* Castle */
 
-// Castle collision area
+.castle {
 
-const castle = {
+    position: absolute;
 
-    x: window.innerWidth / 2 - 250,
+    top: 40px;
+    left: 50%;
 
-    y: 40,
+    transform: translateX(-50%);
 
-    width: 500,
+    width: 500px;
+    height: 250px;
 
-    height: 250
-
-};
-
-
-
-
-// Click movement
-
-document.addEventListener("click", function(event){
+}
 
 
-    targetX = event.clientX;
+.castle-wall {
 
-    targetY = event.clientY;
+    position: absolute;
 
+    bottom: 0;
 
-});
+    width: 500px;
+    height: 120px;
 
+    background: #777;
 
+    border: 8px solid #444;
 
-
-// Check collision
-
-function checkCollision(x,y){
-
-
-    let padding = 25;
+}
 
 
-    if(
+.tower {
 
-        x > castle.x - padding &&
+    position: absolute;
 
-        x < castle.x + castle.width + padding &&
+    width: 90px;
+    height: 180px;
 
-        y > castle.y - padding &&
+    background: #888;
 
-        y < castle.y + castle.height + padding
+    border: 8px solid #444;
 
-    ){
+    top: -40px;
 
-        return true;
-
-    }
+}
 
 
-    return false;
+.left-tower {
+
+    left: 20px;
+
+}
+
+
+.right-tower {
+
+    right: 20px;
+
+}
+
+
+.castle-door {
+
+    position:absolute;
+
+    bottom:0;
+
+    left:210px;
+
+    font-size:60px;
+
+}
+
+
+/* Path */
+
+.path {
+
+    position:absolute;
+
+    background:#b89b6b;
+
+}
+
+
+.main-path {
+
+    width:100px;
+
+    height:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+/* Trees */
+
+.tree {
+
+    position:absolute;
+
+    width:80px;
+
+    height:100px;
+
+    cursor:pointer;
 
 }
 
 
 
+.tree-top {
 
-function gameLoop(){
+    width:80px;
 
+    height:80px;
 
+    background:#267a32;
 
-    let dx = targetX - playerX;
-
-    let dy = targetY - playerY;
-
-
-
-    let distance = Math.sqrt(
-        dx * dx + dy * dy
-    );
-
-
-
-    if(distance > 2){
-
-
-        let nextX = playerX + (dx / distance) * speed;
-
-        let nextY = playerY + (dy / distance) * speed;
-
-
-
-        // World boundaries
-
-        if(
-
-            nextX > 30 &&
-
-            nextX < window.innerWidth - 30 &&
-
-            nextY > 30 &&
-
-            nextY < window.innerHeight - 30
-
-        ){
-
-
-            if(!checkCollision(nextX,nextY)){
-
-
-                playerX = nextX;
-
-                playerY = nextY;
-
-
-            }
-
-
-        }
-
-
-
-        player.style.left = playerX + "px";
-
-        player.style.top = playerY + "px";
-
-
-    }
-
-
-
-    requestAnimationFrame(gameLoop);
-
+    border-radius:50%;
 
 }
 
 
 
-gameLoop();
+.tree-trunk {
+
+    width:20px;
+
+    height:40px;
+
+    background:#8b5a2b;
+
+    margin:auto;
+
+}
+
+
+
+.tree1 {
+
+    left:150px;
+
+    top:300px;
+
+}
+
+
+
+.tree2 {
+
+    right:200px;
+
+    top:400px;
+
+}
+
+
+
+.tree3 {
+
+    left:300px;
+
+    bottom:100px;
+
+}
+
+
+
+/* Player */
+
+#player {
+
+    position:absolute;
+
+    font-size:50px;
+
+    transform:translate(-50%, -50%);
+
+    transition:none;
+}
+
+
+/* Interface */
+
+
+#interface {
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+}
+
+
+.status,
+.skill {
+
+    background:#222;
+
+    color:white;
+
+    padding:10px;
+
+    margin:5px;
+
+    border:2px solid #555;
+
+}
+
+/* Collision Areas */
+
+.castle-wall,
+.tower {
+
+    pointer-events: none;
+
+}
+
+/* Player Sprite */
+
+#player {
+
+    position:absolute;
+
+    width:40px;
+    height:70px;
+
+    transform:translate(-50%, -50%);
+
+}
+
+
+.head {
+
+    width:20px;
+    height:20px;
+
+    background:#f1c27d;
+
+    border-radius:50%;
+
+    margin:auto;
+
+}
+
+
+
+.body {
+
+    width:25px;
+    height:25px;
+
+    background:#3b6cff;
+
+    margin:auto;
+
+}
+
+
+
+.legs {
+
+    width:20px;
+    height:20px;
+
+    background:#333;
+
+    margin:auto;
+
+}
+
