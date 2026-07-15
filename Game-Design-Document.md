@@ -188,3 +188,74 @@ Planned:
 - Multiplayer
 - Relics
 - Dungeons
+
+# Zodiac Beasts
+
+Zodiac Beasts are ancient legendary creatures that exist throughout Last World.
+
+These beings are connected to the world's forgotten history, ancient civilizations, elemental forces, and the mysteries left behind after The Collapse.
+
+Unlike ordinary creatures, Zodiac Beasts possess unique abilities, powerful traits, and rare materials that can influence player progression.
+
+Each Zodiac Beast has:
+
+* A unique identity
+* A connection to the world
+* An elemental relationship
+* Special abilities
+* Rare rewards
+
+## Zodiac Beast Examples
+
+### 🐉 Dragon
+
+A legendary creature connected to ancient power and elemental forces.
+
+Possible connections:
+
+* Fire
+* Air
+* Ancient Relics
+
+### 🐺 Wolf
+
+A powerful hunter of forgotten wilderness regions.
+
+Possible connections:
+
+* Air
+* Speed
+* Tracking abilities
+
+### 🐢 Turtle
+
+An ancient guardian known for unmatched endurance.
+
+Possible connections:
+
+* Earth
+* Defense
+* Protection
+
+### 🐍 Serpent
+
+A mysterious creature from forgotten oceans and waterways.
+
+Possible connections:
+
+* Water
+* Regeneration
+* Ancient civilizations
+
+## Zodiac Beast Progression
+
+Zodiac Beasts may appear as:
+
+* Rare encounters
+* World Bosses
+* Legendary creatures
+* Sources of powerful materials
+* Guardians of ancient secrets
+
+Some Zodiac Beasts may be tied to ancient Relics and the history of The Collapse.
+
