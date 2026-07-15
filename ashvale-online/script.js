@@ -1,56 +1,98 @@
 // Ashvale Online
-// Player Movement System
+// Player Movement + Collision
 
 
 const player = document.getElementById("player");
-
-
-// Starting position
 
 let playerX = window.innerWidth / 2;
 let playerY = window.innerHeight - 200;
 
 
-// Target position
-
 let targetX = playerX;
 let targetY = playerY;
 
 
-// Movement speed
-
 const speed = 3;
 
 
-
-// Place player initially
 
 player.style.left = playerX + "px";
 player.style.top = playerY + "px";
 
 
 
-// Click anywhere to move
+// Castle collision area
 
-document.addEventListener("click", function(event) {
+const castle = {
+
+    x: window.innerWidth / 2 - 250,
+
+    y: 40,
+
+    width: 500,
+
+    height: 250
+
+};
+
+
+
+
+// Click movement
+
+document.addEventListener("click", function(event){
+
 
     targetX = event.clientX;
+
     targetY = event.clientY;
+
 
 });
 
 
 
 
-// Game loop
+// Check collision
+
+function checkCollision(x,y){
+
+
+    let padding = 25;
+
+
+    if(
+
+        x > castle.x - padding &&
+
+        x < castle.x + castle.width + padding &&
+
+        y > castle.y - padding &&
+
+        y < castle.y + castle.height + padding
+
+    ){
+
+        return true;
+
+    }
+
+
+    return false;
+
+}
+
+
+
 
 function gameLoop(){
 
 
-    // Calculate distance
 
     let dx = targetX - playerX;
+
     let dy = targetY - playerY;
+
 
 
     let distance = Math.sqrt(
@@ -59,14 +101,43 @@ function gameLoop(){
 
 
 
-    // Move if not close enough
-
     if(distance > 2){
 
 
-        playerX += (dx / distance) * speed;
+        let nextX = playerX + (dx / distance) * speed;
 
-        playerY += (dy / distance) * speed;
+        let nextY = playerY + (dy / distance) * speed;
+
+
+
+        // World boundaries
+
+        if(
+
+            nextX > 30 &&
+
+            nextX < window.innerWidth - 30 &&
+
+            nextY > 30 &&
+
+            nextY < window.innerHeight - 30
+
+        ){
+
+
+            if(!checkCollision(nextX,nextY)){
+
+
+                playerX = nextX;
+
+                playerY = nextY;
+
+
+            }
+
+
+        }
+
 
 
         player.style.left = playerX + "px";
@@ -80,10 +151,9 @@ function gameLoop(){
 
     requestAnimationFrame(gameLoop);
 
+
 }
 
 
-
-// Start game
 
 gameLoop();
