@@ -125,30 +125,68 @@ body {
 
     position:absolute;
 
-    font-size:70px;
+    width:80px;
+
+    height:100px;
+
+    cursor:pointer;
 
 }
+
+
+
+.tree-top {
+
+    width:80px;
+
+    height:80px;
+
+    background:#267a32;
+
+    border-radius:50%;
+
+}
+
+
+
+.tree-trunk {
+
+    width:20px;
+
+    height:40px;
+
+    background:#8b5a2b;
+
+    margin:auto;
+
+}
+
 
 
 .tree1 {
 
     left:150px;
+
     top:300px;
 
 }
 
 
+
 .tree2 {
 
     right:200px;
+
     top:400px;
 
 }
 
 
+
 .tree3 {
 
     left:300px;
+
     bottom:100px;
 
 }
@@ -206,3 +244,57 @@ body {
     pointer-events: none;
 
 }
+
+/* Player Sprite */
+
+#player {
+
+    position:absolute;
+
+    width:40px;
+    height:70px;
+
+    transform:translate(-50%, -50%);
+
+}
+
+
+.head {
+
+    width:20px;
+    height:20px;
+
+    background:#f1c27d;
+
+    border-radius:50%;
+
+    margin:auto;
+
+}
+
+
+
+.body {
+
+    width:25px;
+    height:25px;
+
+    background:#3b6cff;
+
+    margin:auto;
+
+}
+
+
+
+.legs {
+
+    width:20px;
+    height:20px;
+
+    background:#333;
+
+    margin:auto;
+
+}
+
