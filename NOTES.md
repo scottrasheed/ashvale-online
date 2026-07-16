@@ -1,23 +1,181 @@
-# Last World Development Notes
+# Last World - Developer Notes
 
-This file contains brainstorming, ideas, and future concepts.
+This file contains brainstorming, ideas, questions, and future concepts.
 
-Ideas are not finalized until moved into the Game Design Document.
+Ideas are not finalized until they are moved into the Game Design Document.
 
 ---
 
-# World Ideas
+# Vision
 
-Possible locations:
+Create a medieval fantasy open-world MMORPG where players discover their own power, choose their own path, and create their own legend.
 
-- Ancient kingdoms
-- Lost castles
-- Forgotten forests
-- Floating islands
-- Underground civilizations
-- Dragon territories
-- Ruined cities
-- Ancient temples
+Last World focuses on:
+
+* Exploration
+* Discovery
+* Player freedom
+* Unique identities
+* Deep lore
+* Adventure
+
+Inspirations:
+
+* RuneScape → exploration, progression, world feeling
+* One Piece → oceans, adventure, crews, discovery
+* Jujutsu Kaisen → unique powers and personal abilities
+* Avatar → elemental systems
+* Elden Ring → world exploration and mystery
+* Monster Hunter → legendary creatures and battles
+
+The goal is not to copy these worlds, but to create something original that captures the same feelings.
+
+---
+
+# Core Philosophy
+
+## Power Source ≠ Combat Role
+
+A player's power should not decide their entire identity.
+
+The same power can create completely different playstyles.
+
+Examples:
+
+Fire Rune User:
+
+* Fire Mage
+* Fire Battle Mage
+* Fire Knight
+
+Relic User:
+
+* Relic Tank
+* Relic Assassin
+* Relic Archer
+* Relic Duelist
+
+Players should feel like they created their own legend.
+
+---
+
+# Power System Ideas
+
+## 1. Elementalists (Runes)
+
+Magic users who channel elemental energy through ancient Runes.
+
+Possible elements:
+
+* Fire
+* Water
+* Earth
+* Air
+* Lightning
+* Ice
+* Nature
+* Light
+* Shadow
+
+Ideas:
+
+* Ancient Rune civilizations
+* Lost elemental knowledge
+* Rare Rune combinations
+* Master-level elemental techniques
+
+Questions:
+
+* How are Runes discovered?
+* Can players create their own Rune combinations?
+* Are some Runes forbidden?
+
+---
+
+## 2. Heavenly Restricted
+
+Warriors who sacrifice something valuable for extreme physical power.
+
+Possible sacrifices:
+
+* Magic ability
+* Lifespan
+* Memories
+* Senses
+* Connection to certain powers
+
+Ideas:
+
+* Extremely rare warriors
+* Feared by kingdoms
+* Known for impossible feats
+
+Questions:
+
+* Can the sacrifice ever be reversed?
+* Are there different levels of sacrifice?
+* Can Heavenly Restricted warriors use weapons?
+
+---
+
+## 3. Cursed Arts
+
+Rare supernatural techniques.
+
+Possible abilities:
+
+* Gravity
+* Shadows
+* Blood
+* Chains
+* Space
+* Sound
+* Mirrors
+* Puppets
+
+Ideas:
+
+* Lost techniques
+* Ancient schools
+* Forbidden knowledge
+* Unique character abilities
+
+Questions:
+
+* Are Cursed Arts inherited or discovered?
+* Can players develop their own techniques?
+
+---
+
+## 4. Relic Warriors
+
+Warriors who discover and master ancient Relics.
+
+Relics are legendary artifacts connected to:
+
+* Ancient civilizations
+* The Collapse
+* Lost history
+* Powerful beings
+
+Possible Relic types:
+
+* Swords
+* Spears
+* Shields
+* Bows
+* Crossbows
+* Axes
+* Armor
+* Legendary weapons
+
+Ideas:
+
+* Relics choose certain people
+* Relics contain memories
+* Relics evolve with their user
+* Relics have personalities
+* Corrupted Relics exist
 
 ---
 
@@ -25,186 +183,111 @@ Possible locations:
 
 Possible explanations:
 
-- Ancient Relics became unstable
-- Civilizations fought over Relic power
-- A forgotten enemy caused destruction
-- Something ancient awakened beneath the world
+* Ancient civilizations fought over power
+* Relics became unstable
+* A forgotten enemy awakened
+* Something ancient destroyed the world
+* Powerful beings disappeared
 
 Questions:
 
-- What truly caused The Collapse?
-- Who survived?
-- What secrets were lost?
+* What caused The Collapse?
+* Who survived?
+* What knowledge was lost?
+* Are there civilizations hiding from the world?
 
 ---
 
-# Relic Awakening Ideas
+# World Ideas
 
-Confirmed:
+Possible locations:
 
-- Players unlock their first element through exploration.
-- Players discover Relics instead of choosing powers immediately.
-- The Relic becomes bound to the player's character.
-
-Possible discovery methods:
-
-- Ancient ruins
-- Hidden caves
-- Lost temples
-- Boss encounters
-- Forgotten civilizations
-
-Possible Relic types:
-
-- Common Relics
-- Ancient Relics
-- Legendary Relics
-- Corrupted Relics
+* Ancient kingdoms
+* Lost castles
+* Forgotten forests
+* Floating islands
+* Underground civilizations
+* Dragon territories
+* Ruined cities
+* Ancient temples
+* Pirate islands
+* Ocean kingdoms
+* Frozen lands
+* Volcano regions
 
 Ideas:
 
-- Relics may have their own history
-- Some Relics may choose specific people
-- Some Relics may contain forgotten memories
-- Some Relics may be connected to The Collapse
-
----
-
-# Relic Combination Ideas
-
-Confirmed:
-
-- Relics can be combined.
-
-Ideas:
-
-- Combining Relics creates new abilities
-- Players can create unique builds
-- Different combinations create different playstyles
-- Legendary combinations may be rare discoveries
-
-Possible combinations:
-
-Air + Fire:
-- Storm-like abilities
-- High-speed flame attacks
-
-Earth + Fire:
-- Magma abilities
-- Volcanic powers
-
-Water + Air:
-- Storm abilities
-- Ice-related powers
-
-Earth + Water:
-- Crystal or nature abilities
-
-Questions:
-
-- Are there forbidden combinations?
-- Can Legendary Relics create unique powers?
-- Do combined Relics change appearance?
-- Are some combinations hidden?
-
----
-
-# Character Freedom Ideas
-
-Goal:
-
-Players should feel unique without being restricted.
-
-Ideas:
-
-- Relic gives a starting power
-- Players choose how they develop
-- Weapons affect playstyle
-- Equipment creates different builds
-- Abilities can be customized
-
-Example:
-
-Fire Knight:
-- Sword combat
-- Defensive flames
-- Close-range fighting
-
-Fire Mage:
-- Ranged attacks
-- Area damage
-- Burning effects
-
-Same element, different identity.
-
----
-
-# Element Ideas
-
-## Air
-
-Ideas:
-
-- Sky civilizations
-- Wind warriors
-- Speed-based combat
-- Ancient Air Relics
-
----
-
-## Fire
-
-Ideas:
-
-- Flame kingdoms
-- Volcanic regions
-- Ancient forges
-- Fire guardians
-
----
-
-## Earth
-
-Ideas:
-
-- Mountain civilizations
-- Stone guardians
-- Ancient fortresses
-
----
-
-## Water
-
-Ideas:
-
-- Ocean kingdoms
-- Lost underwater civilizations
-- Water guardians
+* Hidden areas only found through exploration
+* Legendary locations
+* Ancient ruins with secrets
+* Dangerous unexplored oceans
 
 ---
 
 # Zodiac Beast Ideas
 
-Confirmed:
-
-- Zodiac Beasts are ancient legendary creatures.
+Zodiac Beasts are ancient legendary creatures.
 
 Possible examples:
 
-🐉 Dragons
+* Dragons
+* Phoenix
+* Wolves
+* Turtles
+* Serpents
+* Leviathans
+* Ancient birds
+* Mythical beasts
 
-🐺 Wolves
+Connections:
 
-🐢 Turtles
+* Relics
+* Elements
+* The Collapse
+* Ancient civilizations
 
-🐍 Serpents
+Possible uses:
 
-Ideas:
+* World bosses
+* Rare discoveries
+* Legendary materials
+* Story events
 
-- Connect Zodiac Beasts to Relics
-- Create unique regions
-- Create rare materials
-- Create Legendary versions
+Questions:
+
+* Do Zodiac Beasts choose champions?
+* Are some connected to specific Relics?
+* Are there hidden Zodiac Beasts?
+
+---
+
+# Combat Ideas
+
+Possible combat styles:
+
+* Sword combat
+* Dual wielding
+* Great weapons
+* Shield combat
+* Archery
+* Crossbows
+* Throwing weapons
+* Magic combat
+* Martial combat
+
+Possible roles:
+
+* Paladin
+* Knight
+* Tank
+* Assassin
+* Brawler
+* Healer
+* Battle Mage
+* Shaman
+* Aura Fighter
+* Beastmaster
+* Shadow Sorcerer
 
 ---
 
@@ -214,106 +297,103 @@ Ideas:
 
 Ideas:
 
-- Repeatable encounters
-- Unique mechanics
-- Rare rewards
-- Connected to lore
-
+* Large creatures
+* Unique mechanics
+* Rare rewards
+* Lore connections
 
 ## Legendary Raid Bosses
 
 Ideas:
 
-- Massive battles
-- Multiple phases
-- Legendary drops
-- World events
+* Multiple phases
+* Team battles
+* Legendary drops
+* Major story events
 
----
+Possible themes:
 
-# Raid Ideas
-
-Possible raid themes:
-
-- Ancient civilizations
-- Dragon lairs
-- Lost kingdoms
-- Relic temples
-- Corrupted lands
-
-Ideas:
-
-- Multi-phase encounters
-- Group challenges
-- Rare rewards
-- Unique mechanics
+* Ancient civilizations
+* Dragon lairs
+* Lost kingdoms
+* Corrupted lands
+* Relic temples
 
 ---
 
 # NPC Ideas
 
-NPCs should feel like real inhabitants of Last World.
+NPCs should feel like real people.
 
-Possible NPC types:
+Possible NPCs:
 
-- Kings
-- Knights
-- Blacksmiths
-- Merchants
-- Scholars
-- Mages
-- Adventurers
-- Relic researchers
-- Quest givers
+* Kings
+* Knights
+* Blacksmiths
+* Merchants
+* Scholars
+* Mages
+* Adventurers
+* Relic researchers
 
-Every important NPC should have:
+Important NPCs need:
 
-- A name
-- A history
-- A purpose
-- A connection to the world
-
----
-
-# Map and Location Ideas
-
-Possible regions:
-
-- Kingdoms
-- Forests
-- Mountains
-- Islands
-- Ruins
-- Castles
-- Villages
-- Dungeons
-- Dragon territories
-
-Ideas:
-
-- Hidden locations
-- Ancient temples
-- Lost civilizations
-- Legendary areas
+* Name
+* History
+* Goals
+* Personality
+* Connection to the world
 
 ---
 
 # Future Systems
 
-Ideas:
+Possible future ideas:
 
-- Weapons
-- Armor
-- Skills
-- Crafting
-- Guilds
-- Factions
-- Mounts
-- Trading
-- Housing
-- Dungeons
-- Multiplayer
-- Player kingdoms
+* Guilds
+* Factions
+* Kingdom wars
+* Sailing
+* Ships
+* Player crews
+* Crafting
+* Trading
+* Housing
+* Mounts
+* Professions
+* Dungeons
+* Raids
+* Multiplayer systems
+
+---
+
+# Development Reminder
+
+The current goal is not to build the full MMORPG immediately.
+
+The first step is building skills through:
+
+* HTML
+* CSS
+* JavaScript
+* Small projects
+* Browser prototypes
+
+Future:
+
+* C#
+* C++
+* Unreal Engine
+* Full Last World development
+
+---
+
+# Final Question
+
+Every new idea should answer:
+
+"Does this help players create their own legend?"
+
 - NPC Names
 - Enemy Names
 - Boss Names
